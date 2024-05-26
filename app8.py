@@ -149,7 +149,8 @@ def run():
         # Apply text formatting
         header_cells = ['A1', 'D1', 'A4', 'A7']
         for cell in header_cells:
-            ws[cell].font = Font(name='Arial', size=12, bold=True, color="ff4444aa")
+            ws[cell].font = Font(name='Arial', size=12,
+                                 bold=True, color="ff4444aa")
 
         # Save Excel file
         wb.save(args.output)
